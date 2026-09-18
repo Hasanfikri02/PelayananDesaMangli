@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === STYLE GLOBAL UNTUK PELAYANAN DESA === */
+/* Palet warna: Biru #2563eb | Abu #f1f5f9 | Putih #ffffff */
+
+/* FONT & BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #64748b;
+}
+
+/* SIDEBAR (AMAN - TIDAK BENTROK NAVBAR) */
+aside {
+    background: linear-gradient(to bottom, #2563eb, #1e3a8a);
+    color: white;
+    transition: all 0.3s ease;
+}
+aside .p-6 {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+aside nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+aside nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ACTIVE MENU (AMAN) */
+aside nav a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+}
+
+/* KONTEN UTAMA */
+main {
+    background-color: #ffffff;
+    border-top-left-radius: 24px;
+}
+
+/* HEADER DALAM KONTEN */
+main h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+main p {
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+/* KARTU STATISTIK */
+.flex-wrap > div {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #2563eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.flex-wrap > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* INPUT PENCARIAN */
+input[type="text"] {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+}
+input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* BUTTON BIRU — versi AMAN (Tidak override Tailwind lagi!) */
+.btn-biru {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+.btn-biru:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    background-color: #e2e8f0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #334155;
+    letter-spacing: 0.5px;
+}
+table td, table th {
+    padding: 12px 16px;
+}
+table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* BADGE STATUS (AMAN - tidak override Tailwind class!!) */
+.badge-green {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.badge-gray {
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* IKON AKSI */
+.text-blue-600:hover,
+.text-yellow-500:hover,
+.text-red-600:hover {
+    transform: scale(1.15);
+}
+
+/* TRANSISI UMUM */
+* {
+    transition: all 0.2s ease-in-out;
+}
