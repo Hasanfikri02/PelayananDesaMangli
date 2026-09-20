@@ -1,3 +1,5 @@
+Created by Muhammad Hasan Fikri & Yogi Galih Wibowo
+
 # 🏛️ Layanan Desa Digital - Desa Mangli
 
 Sistem Pelayanan Masyarakat Terpadu berbasis Web yang dirancang untuk modernisasi dan efisiensi administrasi desa. Platform ini mempermudah warga dalam mengajukan surat-menyurat secara online, menyampaikan pengaduan, serta membantu perangkat desa dalam melakukan sensus penduduk secara akurat dan cepat.
